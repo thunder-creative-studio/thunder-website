@@ -1437,3 +1437,28 @@ body.dark .project-btn {
     border-color: #363A32;
     color: #F5F5F2;
 }
+
+body.dark {
+    background: #0B0B0B;
+    color: #FFFFFF;
+}
+
+body.dark p {
+    color: #CFCFCF;
+}
+
+body.dark .accent,
+body.dark .green-text {
+    color: #A8FF3E;
+}
+
+body.dark .btn-dark,
+body.dark .project-btn {
+    background: #A8FF3E;
+    color: #0B0B0B;
+    border-color: #A8FF3E;
+}
+
+body.dark .background-title {
+    color: #191919;
+}
