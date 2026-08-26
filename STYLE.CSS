@@ -1462,3 +1462,116 @@ body.dark .project-btn {
 body.dark .background-title {
     color: #191919;
 }
+
+/* ========================================
+   NIGHT MODE — FINAL
+======================================== */
+
+body.dark {
+    --background: #0d0f0c;
+    --black: #f5f5f2;
+    --gray: #a8aaa3;
+    --green: #b7ff32;
+
+    background: var(--background);
+    color: var(--black);
+}
+
+/* NAVBAR */
+body.dark .navbar {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* LOGO */
+body.dark .logo-box {
+    background: #050505;
+    color: var(--green);
+}
+
+/* HERO OUTLINE TEXT */
+body.dark .hero h1 span {
+    -webkit-text-stroke-color: #34382f;
+}
+
+/* MAIN BUTTON */
+body.dark .explore-button {
+    background: var(--green);
+    color: #0b0c09;
+}
+
+body.dark .explore-button:hover {
+    background: #ffffff;
+    color: #0b0c09;
+}
+
+/* SECTION DIVIDERS */
+body.dark .services-section,
+body.dark .work-section,
+body.dark .websites-section,
+body.dark .order-section,
+body.dark .about-section {
+    border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+/* SERVICE CARDS */
+body.dark .service-card {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+body.dark .featured-service {
+    background: #171a15;
+    color: #f5f5f2;
+}
+
+body.dark .featured-service .service-content>p:not(.service-label) {
+    color: #a8aaa3;
+}
+
+/* NORMAL SERVICE BUTTON */
+body.dark .service-button {
+    background: var(--green);
+    color: #0b0c09;
+}
+
+/* DESIGN CARDS */
+body.dark .design-gallery .design-item,
+body.dark .design-gallery .design-item:nth-child(3) {
+    background: #151713 !important;
+    border-color: #292d25 !important;
+}
+
+/* WEBSITE PREVIEW */
+body.dark .website-preview {
+    border-color: #292d25;
+    background: #151713;
+}
+
+/* ORDER FORM */
+body.dark .order-form {
+    background: #151713;
+}
+
+body.dark .form-group input,
+body.dark .form-group select,
+body.dark .form-group textarea {
+    background: #20231d;
+    border-color: #353a30;
+}
+
+/* ABOUT BUTTON */
+body.dark .about-button {
+    background: var(--green);
+    color: #0b0c09;
+}
+
+/* FOOTER */
+body.dark .footer {
+    background: #070807;
+}
+
+/* MOBILE START PROJECT */
+@media (max-width: 750px) {
+    body.dark .order-button {
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+}
