@@ -1401,3 +1401,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 1;
     transform: translateY(-1px);
 }
+
+/* NIGHT MODE COLORS */
+
+body.dark {
+    background: #11130F;
+    color: #F4F4F0;
+}
+
+body.dark .header {
+    border-color: #2B2E28;
+}
+
+body.dark p {
+    color: #B9BBB4;
+}
+
+body.dark .accent,
+body.dark .green-text {
+    color: #86C93A;
+}
+
+body.dark .btn-dark {
+    background: #1A1D17;
+    color: #A5E34D;
+    border: 1px solid #30342C;
+}
+
+body.dark .background-title {
+    color: #1B1E18;
+}
+
+body.dark .project-btn {
+    background: #171A15;
+    border-color: #363A32;
+    color: #F5F5F2;
+}
