@@ -1575,3 +1575,68 @@ body.dark .footer {
         border-color: rgba(255, 255, 255, 0.25);
     }
 }
+
+body.dark {
+    --background: #161616;
+    --black: #f7f7f2;
+    --gray: #b8b8b0;
+    --green: #c8ff1a;
+}
+
+/* الصفحة */
+body.dark {
+    background: #161616;
+}
+
+/* الكروت */
+body.dark .service-card,
+body.dark .order-form,
+body.dark .website-preview,
+body.dark .design-gallery .design-item {
+    background: #202020 !important;
+    border-color: #343434 !important;
+}
+
+/* الكارت المميز */
+body.dark .featured-service {
+    background: #0f0f0f !important;
+}
+
+/* زر VIEW WORK */
+body.dark .explore-button {
+    background: #c8ff1a !important;
+    color: #111 !important;
+}
+
+/* باقي الأزرار المهمة */
+body.dark .service-button,
+body.dark .submit-order,
+body.dark .about-button,
+body.dark .footer-button {
+    background: #c8ff1a !important;
+    color: #111 !important;
+}
+
+/* زر START A PROJECT فوق */
+body.dark .order-button {
+    background: transparent;
+    border: 1px solid #555 !important;
+    color: #fff;
+}
+
+/* النصوص الثانوية */
+body.dark .hero-description,
+body.dark .section-description,
+body.dark .about-text p,
+body.dark .service-content>p {
+    color: #b8b8b0 !important;
+}
+
+/* الفوتر */
+body.dark .footer {
+    background: #080808 !important;
+}
+
+body.dark {
+    --background: #23241f;
+}
