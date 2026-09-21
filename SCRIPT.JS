@@ -10,7 +10,6 @@
 
 const body = document.body;
 
-const themeToggle = document.getElementById("themeToggle");
 
 const orderForm = document.getElementById("orderForm");
 const submitOrder = document.getElementById("submitOrder");
@@ -30,98 +29,6 @@ const revealElements = document.querySelectorAll(
     ".reveal"
 );
 
-
-// ==============================
-// DARK / LIGHT MODE
-// ==============================
-
-function setTheme(theme) {
-
-    if (theme === "dark") {
-
-        body.classList.add("dark");
-
-        if (themeToggle) {
-            themeToggle.setAttribute(
-                "aria-label",
-                "Switch to light mode"
-            );
-
-            themeToggle.setAttribute(
-                "title",
-                "Switch to light mode"
-            );
-        }
-
-    } else {
-
-        body.classList.remove("dark");
-
-        if (themeToggle) {
-            themeToggle.setAttribute(
-                "aria-label",
-                "Switch to dark mode"
-            );
-
-            themeToggle.setAttribute(
-                "title",
-                "Switch to dark mode"
-            );
-        }
-    }
-}
-
-
-// LOAD SAVED THEME
-
-const savedTheme = localStorage.getItem(
-    "thunder-theme"
-);
-
-if (savedTheme === "dark") {
-
-    setTheme("dark");
-
-} else {
-
-    setTheme("light");
-}
-
-
-// THEME BUTTON
-
-if (themeToggle) {
-
-    themeToggle.addEventListener(
-        "click",
-        function () {
-
-            const darkMode =
-                body.classList.contains("dark");
-
-            if (darkMode) {
-
-                setTheme("light");
-
-                localStorage.setItem(
-                    "thunder-theme",
-                    "light"
-                );
-
-            } else {
-
-                setTheme("dark");
-
-                localStorage.setItem(
-                    "thunder-theme",
-                    "dark"
-                );
-            }
-
-        }
-    );
-
-}
 
 
 // ==============================
