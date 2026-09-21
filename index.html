@@ -5,45 +5,68 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" name="robots" content="index, follow">
 
-    <title>Thunder Creative Studio</title>
-    <meta name="description"
-        content="Thunder Creative Studio creates bold graphic designs and professional websites for modern businesses and brands.">
+    <meta property="og:title" content="Thunder Creative Studio">
+    <meta property="og:description"
+        content="Graphic design, presentation design and responsive websites for modern brands and businesses.">
 
-    <meta name="theme-color" content="#111111">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thunder Creative Studio">
+    <meta name="twitter:description"
+        content="Graphic design, presentation design and responsive websites for modern brands and businesses.">
+
+    <meta name="theme-color" content="#f1efe9">
+
+    <title>Thunder Creative Studio | Design & Web</title>
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="STYLE.CSS">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
 
-        <a href="./" class="logo">
+        <a href="#top" class="logo" aria-label="Thunder Creative Studio home">
             <span class="logo-box">T</span>
             THUNDER
         </a>
 
         <div class="nav-links">
             <a href="#services">Services</a>
-            <a href="#work">Our Work</a>
+            <a href="#work">Work</a>
+            <a href="#process">Process</a>
             <a href="#about">About</a>
         </div>
 
-        <a href="#order" class="order-button">
-            Start a Project ↗
-        </a>
+        <div class="nav-actions">
+
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme"
+                title="Switch color theme">
+                <span class="theme-icon" aria-hidden="true">◐</span>
+                <span class="theme-label">MODE</span>
+            </button>
+
+            <a href="#order" class="order-button">
+                Start a Project ↗
+            </a>
+
+        </div>
 
     </nav>
 
 
-    <main>
+    <main id="top">
 
-        <!-- HERO SECTION -->
+        <!-- HERO -->
 
-        <section class="hero">
+        <section class="hero reveal">
 
             <p class="location">
                 <span class="green-dot"></span>
@@ -52,19 +75,15 @@
 
             <h1>
                 BOLD VISUALS.
-
-                <span>
-                    REAL DIGITAL
-                </span>
-
+                <span>REAL DIGITAL</span>
                 EXPERIENCES.
             </h1>
 
             <div class="hero-bottom">
 
                 <p class="hero-description">
-                    We create powerful graphic designs and professional
-                    websites built to help your business stand out.
+                    Graphic design, presentation design and responsive websites
+                    built to make your brand look sharper, clearer and more professional.
                 </p>
 
                 <a href="#work" class="explore-button">
@@ -76,9 +95,9 @@
         </section>
 
 
-        <!-- SERVICES SECTION -->
+        <!-- SERVICES -->
 
-        <section class="services-section" id="services">
+        <section class="services-section reveal" id="services">
 
             <div class="section-header">
 
@@ -96,8 +115,8 @@
                 </div>
 
                 <p class="section-description">
-                    Choose the service your project needs.
-                    Every order is created specifically for your brand.
+                    Focused creative services for businesses, personal brands
+                    and projects that need a stronger visual presence.
                 </p>
 
             </div>
@@ -133,21 +152,68 @@
                         </h3>
 
                         <p>
-                            Professional social media posts, advertisements,
-                            flyers, announcements and branded visual content.
+                            Bold, on-brand visuals designed for campaigns,
+                            offers, announcements and everyday social content.
                         </p>
 
                         <ul>
                             <li>Social media designs</li>
                             <li>Advertisements and offers</li>
-                            <li>Flyers and announcements</li>
-                            <li>High-quality JPG and PDF files</li>
+                            <li>Flyers and posters</li>
+                            <li>JPG, PNG and PDF delivery</li>
                         </ul>
 
                     </div>
 
+                    <a href="#order" class="service-button" data-service-target="Graphic Design">
+                        ORDER THIS SERVICE ↗
+                    </a>
 
-                    <a href="#order" class="service-button">
+                </article>
+
+
+                <!-- PRESENTATION DESIGN -->
+
+                <article class="service-card">
+
+                    <div class="service-top">
+
+                        <span class="service-number">
+                            02
+                        </span>
+
+                        <span class="service-icon">
+                            ▰
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-content">
+
+                        <p class="service-label">
+                            SLIDE DESIGN
+                        </p>
+
+                        <h3>
+                            Presentation Design
+                        </h3>
+
+                        <p>
+                            Clean, structured presentations that turn your information
+                            into a clear visual story people can follow.
+                        </p>
+
+                        <ul>
+                            <li>Business presentations</li>
+                            <li>Pitch decks</li>
+                            <li>Academic presentations</li>
+                            <li>PowerPoint &amp; Google Slides</li>
+                        </ul>
+
+                    </div>
+
+                    <a href="#order" class="service-button" data-service-target="Presentation Design">
                         ORDER THIS SERVICE ↗
                     </a>
 
@@ -156,12 +222,12 @@
 
                 <!-- WEBSITE DEVELOPMENT -->
 
-                <article class="service-card">
+                <article class="service-card wide-service">
 
                     <div class="service-top">
 
                         <span class="service-number">
-                            02
+                            03
                         </span>
 
                         <span class="service-icon">
@@ -182,21 +248,21 @@
                         </h3>
 
                         <p>
-                            Modern and responsive websites designed around
-                            your business, audience and goals.
+                            Modern responsive websites designed around your business,
+                            audience and goals — from focused landing pages to full
+                            business sites.
                         </p>
 
                         <ul>
                             <li>Business websites</li>
                             <li>Portfolio websites</li>
                             <li>Responsive mobile design</li>
-                            <li>Custom features and pages</li>
+                            <li>Custom pages and features</li>
                         </ul>
 
                     </div>
 
-
-                    <a href="#order" class="service-button">
+                    <a href="#order" class="service-button" data-service-target="Website Development">
                         ORDER THIS SERVICE ↗
                     </a>
 
@@ -206,10 +272,155 @@
 
         </section>
 
+        <!-- ==============================
+     WHAT YOU GET
+============================== -->
 
-        <!-- CONCEPT DESIGNS -->
+        <section class="deliverables-section reveal">
 
-        <section class="work-section" id="work">
+            <div class="deliverables-header">
+
+                <div>
+
+                    <p class="section-number">
+                        WHAT YOU GET
+                    </p>
+
+                    <h2>
+                        BUILT TO USE.<br>
+                        READY TO DELIVER.
+                    </h2>
+
+                </div>
+
+                <p class="deliverables-intro">
+                    Every project comes with clear deliverables based
+                    on the service you choose and what your project needs.
+                </p>
+
+            </div>
+
+
+            <div class="deliverables-grid">
+
+                <!-- GRAPHIC -->
+
+                <article class="deliverable-card">
+
+                    <div class="deliverable-top">
+
+                        <span>01</span>
+
+                        <span class="deliverable-icon">
+                            ✦
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p class="deliverable-label">
+                            GRAPHIC DESIGN
+                        </p>
+
+                        <h3>
+                            READY FOR<br>
+                            YOUR BRAND.
+                        </h3>
+
+                        <ul>
+                            <li>High-quality JPG &amp; PNG files</li>
+                            <li>PDF when required</li>
+                            <li>Agreed revisions</li>
+                            <li>Files prepared for digital use</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRESENTATION -->
+
+                <article class="deliverable-card deliverable-featured">
+
+                    <div class="deliverable-top">
+
+                        <span>02</span>
+
+                        <span class="deliverable-icon">
+                            ▰
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p class="deliverable-label">
+                            PRESENTATION DESIGN
+                        </p>
+
+                        <h3>
+                            EDITABLE.<br>
+                            PRESENTABLE.
+                        </h3>
+
+                        <ul>
+                            <li>Editable presentation file</li>
+                            <li>PowerPoint or Google Slides</li>
+                            <li>PDF export</li>
+                            <li>Consistent slide system</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- WEBSITE -->
+
+                <article class="deliverable-card">
+
+                    <div class="deliverable-top">
+
+                        <span>03</span>
+
+                        <span class="deliverable-icon">
+                            &lt;/&gt;
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p class="deliverable-label">
+                            WEBSITE DEVELOPMENT
+                        </p>
+
+                        <h3>
+                            BUILT FOR<br>
+                            EVERY SCREEN.
+                        </h3>
+
+                        <ul>
+                            <li>Responsive website</li>
+                            <li>Agreed pages and sections</li>
+                            <li>Mobile-ready layout</li>
+                            <li>Custom project features</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+        <!-- ==============================
+     GRAPHIC DESIGN PORTFOLIO
+============================== -->
+
+        <section class="work-section reveal" id="work">
 
             <div class="work-header">
 
@@ -223,8 +434,8 @@
                 </h2>
 
                 <span>
-                    Experimental designs created to explore different
-                    industries, styles and creative directions.
+                    Experimental work created to explore different industries,
+                    visual styles and creative directions.
                 </span>
 
             </div>
@@ -232,41 +443,100 @@
 
             <div class="design-gallery">
 
-                <div class="design-item">
+                <!-- DESIGN 1 -->
 
-                    <img src="IMAGES/DESIGN%201.png" alt="Thunder concept design 1">
+                <figure class="design-item">
 
-                </div>
+                    <img src="IMAGES/DESIGN%201.png" alt="Bella Tavola restaurant social media design" loading="lazy">
+
+                    <figcaption>
+
+                        <span>
+                            BELLA TAVOLA
+                        </span>
+
+                        <small>
+                            Restaurant Campaign · Concept
+                        </small>
+
+                    </figcaption>
+
+                </figure>
 
 
-                <div class="design-item">
+                <!-- DESIGN 2 -->
 
-                    <img src="IMAGES/DESIGN%202.png" alt="Thunder concept design 2">
+                <figure class="design-item">
 
-                </div>
+                    <img src="IMAGES/DESIGN%202.png" alt="Aurelia Motors automotive campaign design" loading="lazy">
+
+                    <figcaption>
+
+                        <span>
+                            AURELIA MOTORS
+                        </span>
+
+                        <small>
+                            Automotive Campaign · Concept
+                        </small>
+
+                    </figcaption>
+
+                </figure>
 
 
-                <div class="design-item">
+                <!-- DESIGN 3 -->
 
-                    <img src="IMAGES/DESIGN%203.png" alt="Thunder concept design 4">
+                <figure class="design-item">
 
-                </div>
+                    <img src="IMAGES/DESIGN%203.png" alt="Roast and Bloom coffee shop design" loading="lazy">
+
+                    <figcaption>
+
+                        <span>
+                            ROAST &amp; BLOOM
+                        </span>
+
+                        <small>
+                            Café Campaign · Concept
+                        </small>
+
+                    </figcaption>
+
+                </figure>
 
 
-                <div class="design-item">
+                <!-- DESIGN 4 -->
 
-                    <img src="IMAGES/DESIGN%204.png" alt="Thunder concept design 4">
+                <figure class="design-item">
 
-                </div>
+                    <img src="IMAGES/DESIGN%204.png" alt="Gym promotional campaign design" loading="lazy">
+
+                    <figcaption>
+
+                        <span>
+                            FITNESS CAMPAIGN
+                        </span>
+
+                        <small>
+                            Fitness Promotion · Concept
+                        </small>
+
+                    </figcaption>
+
+                </figure>
 
             </div>
 
         </section>
 
 
-        <!-- CONCEPT WEBSITES -->
 
-        <section class="websites-section">
+        <!-- ==============================
+     WEBSITE PORTFOLIO
+============================== -->
+
+        <section class="websites-section reveal" id="websites">
 
             <div class="websites-header">
 
@@ -280,8 +550,8 @@
                 </h2>
 
                 <span>
-                    Experimental websites created to demonstrate responsive
-                    layouts, visual direction and digital functionality.
+                    Responsive website concepts created to explore
+                    layout, visual direction and digital experiences.
                 </span>
 
             </div>
@@ -291,59 +561,394 @@
 
                 <!-- WEBSITE 1 -->
 
-                <div class="website-preview">
+                <figure class="website-project">
 
-                    <div class="browser-bar">
+                    <div class="website-preview">
 
-                        <div class="browser-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="browser-bar">
+
+                            <div class="browser-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="browser-address">
+                                THUNDER BURGER · CONCEPT WEBSITE
+                            </div>
+
                         </div>
 
-                        <div class="browser-address">
-                            Concept Website
-                        </div>
+
+                        <img src="IMAGES/WEBSITE%201.png" alt="Thunder Burger restaurant website concept"
+                            loading="lazy">
 
                     </div>
 
-                    <img src="IMAGES/WEBSITE%201.png" alt="Thunder concept website 1">
 
-                </div>
+                    <figcaption>
+
+                        <strong>
+                            THUNDER BURGER
+                        </strong>
+
+                        <span>
+                            Restaurant Website · Concept
+                        </span>
+
+                    </figcaption>
+
+                </figure>
 
 
                 <!-- WEBSITE 2 -->
 
-                <div class="website-preview">
+                <figure class="website-project">
 
-                    <div class="browser-bar">
+                    <div class="website-preview">
 
-                        <div class="browser-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="browser-bar">
+
+                            <div class="browser-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="browser-address">
+                                AURELIA · CONCEPT WEBSITE
+                            </div>
+
                         </div>
 
-                        <div class="browser-address">
-                            Concept Website
-                        </div>
+
+                        <img src="IMAGES/WEBSITE%202.png" alt="Aurelia automotive website concept" loading="lazy">
 
                     </div>
 
-                    <img src="IMAGES/WEBSITE%202.png" alt="Thunder concept website 2">
+
+                    <figcaption>
+
+                        <strong>
+                            AURELIA
+                        </strong>
+
+                        <span>
+                            Automotive Website · Concept
+                        </span>
+
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="presentation-section reveal" id="presentations">
+
+            <div class="presentation-header">
+
+                <p>
+                    04 / PRESENTATION DESIGN
+                </p>
+
+                <h2>
+                    STORIES.<br>
+                    STRUCTURED.<br>
+                    BEAUTIFULLY.
+                </h2>
+
+                <span>
+                    Professional presentations designed to make ideas
+                    clearer, stronger and easier to remember.
+                </span>
+
+            </div>
+
+
+            <div class="presentation-showcase">
+
+                <div class="presentation-info">
+
+                    <p>
+                        From business presentations and pitch decks
+                        to academic projects, every slide is designed
+                        around one clear visual system.
+                    </p>
+
+                    <div class="presentation-tags">
+
+                        <span>POWERPOINT</span>
+                        <span>GOOGLE SLIDES</span>
+                        <span>PITCH DECKS</span>
+                        <span>ACADEMIC</span>
+
+                    </div>
+
+                    <a href="#order" class="service-button" data-service-target="Presentation Design">
+                        START A PRESENTATION ↗
+                    </a>
+
+                </div>
+
+
+                <div class="slides-preview">
+
+                    <article class="presentation-slide slide-one">
+
+                        <span class="slide-label">
+                            THUNDER / 01
+                        </span>
+
+                        <h3>
+                            BUILDING<br>
+                            THE NEXT<br>
+                            BIG IDEA.
+                        </h3>
+
+                        <span class="slide-accent"></span>
+
+                    </article>
+
+
+                    <article class="presentation-slide slide-two">
+
+                        <span class="slide-label">
+                            THUNDER / 02
+                        </span>
+
+                        <div class="slide-two-content">
+
+                            <span class="slide-small-title">
+                                CLEAR STRUCTURE
+                            </span>
+
+                            <h3>
+                                ONE IDEA.<br>
+                                ONE SLIDE.
+                            </h3>
+
+                            <p>
+                                Strong hierarchy keeps every message
+                                simple, focused and easy to follow.
+                            </p>
+
+                        </div>
+
+                        <span class="slide-green-mark"></span>
+
+                    </article>
+
+
+                    <article class="presentation-slide slide-three">
+
+                        <span class="slide-label">
+                            THUNDER / 03
+                        </span>
+
+                        <p>
+                            PRESENT WITH
+                        </p>
+
+                        <h3>
+                            CONFIDENCE.
+                        </h3>
+
+                        <span class="slide-footer">
+                            THUNDER CREATIVE STUDIO ↗
+                        </span>
+
+                    </article>
 
                 </div>
 
             </div>
 
         </section>
-        <!-- ABOUT SECTION -->
+        <!-- ==============================
+     SERVICES STRIP
+============================== -->
 
-        <section class="about-section" id="about">
+        <div class="services-strip">
+
+            <div class="services-strip-track">
+
+                <div class="services-strip-group">
+
+                    <span>GRAPHIC DESIGN</span>
+                    <b>✦</b>
+
+                    <span>PRESENTATION DESIGN</span>
+                    <b>✦</b>
+
+                    <span>WEB DEVELOPMENT</span>
+                    <b>✦</b>
+
+                    <span>THUNDER CREATIVE STUDIO</span>
+                    <b>✦</b>
+
+                </div>
+
+                <div class="services-strip-group" aria-hidden="true">
+
+                    <span>GRAPHIC DESIGN</span>
+                    <b>✦</b>
+
+                    <span>PRESENTATION DESIGN</span>
+                    <b>✦</b>
+
+                    <span>WEB DEVELOPMENT</span>
+                    <b>✦</b>
+
+                    <span>THUNDER CREATIVE STUDIO</span>
+                    <b>✦</b>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ==============================
+     HOW WE WORK
+============================== -->
+
+        <section class="process-section reveal" id="process">
+
+            <div class="process-heading">
+
+                <div>
+                    <p class="section-number">
+                        05 / HOW WE WORK
+                    </p>
+
+                    <h2>
+                        SIMPLE<br>
+                        PROCESS.<br>
+                        STRONG RESULT.
+                    </h2>
+                </div>
+
+                <p class="process-intro">
+                    A clear four-step workflow from your first message
+                    to the final approved project.
+                </p>
+
+            </div>
+
+
+            <div class="process-list">
+
+                <!-- STEP 1 -->
+
+                <article class="process-step">
+
+                    <span class="process-step-number">
+                        01
+                    </span>
+
+                    <h3>
+                        BRIEF
+                    </h3>
+
+                    <p>
+                        Tell us what you need, your goals,
+                        content, references and preferred direction.
+                    </p>
+
+                    <span class="process-arrow">
+                        ↘
+                    </span>
+
+                </article>
+
+
+                <!-- STEP 2 -->
+
+                <article class="process-step">
+
+                    <span class="process-step-number">
+                        02
+                    </span>
+
+                    <h3>
+                        DIRECTION
+                    </h3>
+
+                    <p>
+                        We define the visual style and creative direction
+                        before the main design begins.
+                    </p>
+
+                    <span class="process-arrow">
+                        ↘
+                    </span>
+
+                </article>
+
+
+                <!-- STEP 3 -->
+
+                <article class="process-step">
+
+                    <span class="process-step-number">
+                        03
+                    </span>
+
+                    <h3>
+                        CREATE
+                    </h3>
+
+                    <p>
+                        Your project is designed, refined
+                        and adjusted based on the agreed direction.
+                    </p>
+
+                    <span class="process-arrow">
+                        ↘
+                    </span>
+
+                </article>
+
+
+                <!-- STEP 4 -->
+
+                <article class="process-step">
+
+                    <span class="process-step-number">
+                        04
+                    </span>
+
+                    <h3>
+                        DELIVER
+                    </h3>
+
+                    <p>
+                        Once approved, you receive the final files
+                        in the formats agreed for your project.
+                    </p>
+
+                    <span class="process-arrow">
+                        ✓
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="about-section reveal" id="about">
 
             <p class="about-number">
-                04 / ABOUT THUNDER
+                06 / ABOUT THUNDER
             </p>
+
 
             <div class="about-content">
 
@@ -352,18 +957,37 @@
                     BIG AMBITION.
                 </h2>
 
+
                 <div class="about-text">
 
                     <p>
-                        Thunder Creative Studio combines graphic design and
-                        website development to help businesses build a strong
-                        and professional digital presence.
+                        Thunder Creative Studio combines graphic design,
+                        presentation design and website development to help
+                        businesses build a stronger visual presence.
                     </p>
 
                     <p>
-                        We create custom work based on each project's identity,
-                        goals and audience—not generic designs copied from templates.
+                        Every project is built around the brand, audience and goal —
+                        not copied from a generic template.
                     </p>
+
+
+                    <div class="about-points" aria-label="Why Thunder">
+
+                        <span>
+                            Custom Direction
+                        </span>
+
+                        <span>
+                            Clear Communication
+                        </span>
+
+                        <span>
+                            Purposeful Design
+                        </span>
+
+                    </div>
+
 
                     <a href="#order" class="about-button">
                         START YOUR PROJECT ↗
@@ -374,14 +998,103 @@
             </div>
 
         </section>
-        <!-- ORDER SECTION -->
 
-        <section class="order-section" id="order">
+
+        <!-- FAQ -->
+
+        <section class="faq-section reveal" id="faq">
+
+            <div class="faq-intro">
+
+                <p class="section-number">
+                    07 / FAQ
+                </p>
+
+                <h2>
+                    BEFORE WE<br>
+                    GET STARTED.
+                </h2>
+
+            </div>
+
+
+            <div class="faq-list">
+
+                <details>
+
+                    <summary>
+                        How long does a project take?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Timing depends on the service, project size and how quickly
+                        feedback is provided. Your expected delivery date is agreed
+                        before work begins.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Are revisions included?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Yes. The revision scope is agreed before the project starts
+                        so both sides are clear on what is included.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What files will I receive?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Final formats depend on the service. Graphic projects can
+                        include JPG, PNG or PDF; presentations can include editable
+                        slide files and PDF; websites are delivered according to
+                        the agreed setup.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Can I request something not listed?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Yes. Choose the closest service in the form and explain
+                        what you need in the project details.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDER -->
+
+        <section class="order-section reveal" id="order">
 
             <div class="order-intro">
 
                 <p class="order-number">
-                    05 / START A PROJECT
+                    08 / START A PROJECT
                 </p>
 
                 <h2>
@@ -390,8 +1103,8 @@
                 </h2>
 
                 <p class="order-description">
-                    Tell us about your project. The Thunder team will review
-                    your request and contact you using the details provided.
+                    Tell us what you need. Thunder will review the request
+                    and contact you using the details you provide.
                 </p>
 
             </div>
@@ -399,8 +1112,10 @@
 
             <form class="order-form" id="orderForm" action="https://formspree.io/f/xljerdzz" method="POST">
 
-                <input type="hidden" name="_subject" value="New Thunder Project Request">
 
+                <input type="hidden" name="subject" id="emailSubject" value="New Thunder Project Request">
+
+                <!-- NAME + BUSINESS -->
 
                 <div class="form-row">
 
@@ -428,28 +1143,38 @@
                 </div>
 
 
+                <!-- CONTACT -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="clientEmail">
+                            Your Email Address
+                        </label>
+
+                        <input type="email" id="clientEmail" name="email" placeholder="name@example.com" required>
+
+                    </div>
 
 
-                <div class="form-group">
+                    <div class="form-group">
 
-                    <label for="clientPhone">
-                        Your Phone Number
-                    </label>
+                        <label for="clientPhone">
+                            Phone Number
+                            <span class="optional">
+                                OPTIONAL
+                            </span>
+                        </label>
 
-                    <input type="tel" id="clientPhone" name="client_phone" placeholder="+20 100 000 0000" required>
+                        <input type="tel" id="clientPhone" name="client_phone" placeholder="+20 100 000 0000">
+
+                    </div>
 
                 </div>
 
-                <div class="form-group">
 
-                    <label for="clientEmail">
-                        Your Email Address
-                    </label>
-
-                    <input type="email" id="clientEmail" name="email" placeholder="name@example.com" required>
-
-                </div>
-
+                <!-- SERVICE + BUDGET -->
 
                 <div class="form-row">
 
@@ -469,6 +1194,10 @@
                                 Graphic Design
                             </option>
 
+                            <option value="Presentation Design">
+                                Presentation Design
+                            </option>
+
                             <option value="Website Development">
                                 Website Development
                             </option>
@@ -484,12 +1213,870 @@
                             Estimated Budget
                         </label>
 
-                        <input type="text" id="budget" name="estimated_budget" placeholder="Your estimated budget">
+                        <input type="text" id="budget" name="estimated_budget"
+                            placeholder="Your range or 'Not sure yet'">
 
                     </div>
 
                 </div>
 
+
+                <!-- ==============================
+     GRAPHIC DESIGN EXTRA OPTIONS
+============================== -->
+
+                <div class="service-extra" id="graphicFields" data-service-fields="Graphic Design" hidden>
+
+                    <div class="service-extra-header">
+
+                        <span>
+                            GRAPHIC DESIGN DETAILS
+                        </span>
+
+                        <p>
+                            Help us understand exactly what you need.
+                        </p>
+
+                    </div>
+
+
+                    <!-- DESIGN TYPE + QUANTITY -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="graphicType">
+                                Design Type
+                            </label>
+
+                            <select id="graphicType" name="graphic_design_type">
+
+                                <option value="">
+                                    Choose a design type
+                                </option>
+
+                                <option value="Social Media Design">
+                                    Social Media Design
+                                </option>
+
+                                <option value="Advertisement">
+                                    Advertisement / Offer
+                                </option>
+
+                                <option value="Flyer">
+                                    Flyer
+                                </option>
+
+                                <option value="Poster">
+                                    Poster
+                                </option>
+
+                                <option value="Announcement">
+                                    Announcement
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="designQuantity">
+                                Number of Designs
+                            </label>
+
+                            <input type="number" id="designQuantity" name="design_quantity" min="1"
+                                placeholder="e.g. 3">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PLATFORM -->
+
+                    <div class="form-group">
+
+                        <label for="graphicPlatform">
+                            Platform / Format
+                        </label>
+
+                        <select id="graphicPlatform" name="graphic_platform">
+
+                            <option value="">
+                                Choose where the design will be used
+                            </option>
+
+                            <option value="Instagram Post">
+                                Instagram Post
+                            </option>
+
+                            <option value="Instagram Story">
+                                Instagram Story
+                            </option>
+
+                            <option value="Facebook">
+                                Facebook
+                            </option>
+
+                            <option value="LinkedIn">
+                                LinkedIn
+                            </option>
+
+                            <option value="Print">
+                                Print
+                            </option>
+
+                            <option value="Custom Size">
+                                Custom Size
+                            </option>
+
+                            <option value="Not Sure">
+                                Not Sure Yet
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PROJECT GOAL -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Main Goal
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_goal" value="Launch">
+                                <span>Launch</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_goal" value="Promote an Offer">
+                                <span>Promote</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_goal" value="Announcement">
+                                <span>Announce</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_goal" value="Brand Content">
+                                <span>Brand Content</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STYLE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Preferred Style
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_style" value="Bold">
+                                <span>Bold</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_style" value="Clean">
+                                <span>Clean</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_style" value="Premium">
+                                <span>Premium</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="graphic_style" value="Minimal">
+                                <span>Minimal</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BRAND MATERIALS -->
+
+                    <div class="form-group">
+
+                        <label>
+                            What Do You Already Have?
+                        </label>
+
+                        <div class="choice-grid choice-grid-three">
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="brand_materials" value="Logo">
+                                <span>Logo</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="brand_materials" value="Brand Colors">
+                                <span>Brand Colors</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="brand_materials" value="Text / Copy">
+                                <span>Text / Copy</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CUSTOM SIZE -->
+
+                    <div class="form-group">
+
+                        <label for="graphicNotes">
+                            Design-Specific Notes
+                            <span class="optional">
+                                OPTIONAL
+                            </span>
+                        </label>
+
+                        <textarea id="graphicNotes" name="graphic_notes" rows="3"
+                            placeholder="Exact size, special text, reference style or anything we should know..."></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==============================
+     PRESENTATION DESIGN EXTRA OPTIONS
+============================== -->
+
+                <div class="service-extra" id="presentationFields" data-service-fields="Presentation Design" hidden>
+
+                    <div class="service-extra-header">
+
+                        <span>
+                            PRESENTATION DESIGN DETAILS
+                        </span>
+
+                        <p>
+                            Tell us what kind of presentation you need
+                            and how it will be used.
+                        </p>
+
+                    </div>
+
+
+                    <!-- TYPE + SLIDE COUNT -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="presentationType">
+                                Presentation Type
+                            </label>
+
+                            <select id="presentationType" name="presentation_type">
+
+                                <option value="">
+                                    Choose a presentation type
+                                </option>
+
+                                <option value="Business Presentation">
+                                    Business Presentation
+                                </option>
+
+                                <option value="Pitch Deck">
+                                    Pitch Deck
+                                </option>
+
+                                <option value="Academic Presentation">
+                                    Academic Presentation
+                                </option>
+
+                                <option value="Company Profile">
+                                    Company Profile
+                                </option>
+
+                                <option value="Sales Presentation">
+                                    Sales Presentation
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="slideCount">
+                                Approx. Number of Slides
+                            </label>
+
+                            <input type="number" id="slideCount" name="slide_count" min="1" placeholder="e.g. 12">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORMAT -->
+
+                    <div class="form-group">
+
+                        <label for="presentationPlatform">
+                            Preferred Format
+                        </label>
+
+                        <select id="presentationPlatform" name="presentation_format">
+
+                            <option value="">
+                                Choose a format
+                            </option>
+
+                            <option value="PowerPoint">
+                                PowerPoint
+                            </option>
+
+                            <option value="Google Slides">
+                                Google Slides
+                            </option>
+
+                            <option value="PDF">
+                                PDF
+                            </option>
+
+                            <option value="PowerPoint + PDF">
+                                PowerPoint + PDF
+                            </option>
+
+                            <option value="Not Sure Yet">
+                                Not Sure Yet
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- AUDIENCE -->
+
+                    <div class="form-group">
+
+                        <label for="presentationAudience">
+                            Who Will See It?
+                        </label>
+
+                        <select id="presentationAudience" name="presentation_audience">
+
+                            <option value="">
+                                Choose the audience
+                            </option>
+
+                            <option value="Clients">
+                                Clients
+                            </option>
+
+                            <option value="Investors">
+                                Investors
+                            </option>
+
+                            <option value="Students / Teachers">
+                                Students / Teachers
+                            </option>
+
+                            <option value="Internal Team">
+                                Internal Team
+                            </option>
+
+                            <option value="General Audience">
+                                General Audience
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MAIN GOAL -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Main Goal
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_goal" value="Pitch">
+                                <span>Pitch</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_goal" value="Explain">
+                                <span>Explain</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_goal" value="Sell">
+                                <span>Sell</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_goal" value="Present">
+                                <span>Present</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STYLE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Preferred Style
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_style" value="Bold">
+                                <span>Bold</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_style" value="Clean">
+                                <span>Clean</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_style" value="Premium">
+                                <span>Premium</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_style" value="Minimal">
+                                <span>Minimal</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTENT STATUS -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Is Your Content Ready?
+                        </label>
+
+                        <div class="choice-grid choice-grid-three">
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_content_status" value="Ready">
+                                <span>Ready</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_content_status" value="Partly Ready">
+                                <span>Partly Ready</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="presentation_content_status" value="Need Help Organizing">
+                                <span>Need Help</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MATERIALS -->
+
+                    <div class="form-group">
+
+                        <label>
+                            What Do You Already Have?
+                        </label>
+
+                        <div class="choice-grid choice-grid-three">
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="presentation_materials" value="Logo">
+                                <span>Logo</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="presentation_materials" value="Brand Colors">
+                                <span>Brand Colors</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="presentation_materials" value="Images / Assets">
+                                <span>Images / Assets</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group">
+
+                        <label for="presentationNotes">
+                            Presentation-Specific Notes
+                            <span class="optional">
+                                OPTIONAL
+                            </span>
+                        </label>
+
+                        <textarea id="presentationNotes" name="presentation_notes" rows="3"
+                            placeholder="Tell us about the topic, references, preferred colors, important slides or anything else..."></textarea>
+
+                    </div>
+
+                </div>
+                <!-- ==============================
+     WEBSITE DEVELOPMENT EXTRA OPTIONS
+============================== -->
+
+                <div class="service-extra" id="websiteFields" data-service-fields="Website Development" hidden>
+
+                    <div class="service-extra-header">
+
+                        <span>
+                            WEBSITE DEVELOPMENT DETAILS
+                        </span>
+
+                        <p>
+                            Tell us what kind of website you need
+                            and what you want it to achieve.
+                        </p>
+
+                    </div>
+
+
+                    <!-- WEBSITE TYPE + PAGE COUNT -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="websiteType">
+                                Website Type
+                            </label>
+
+                            <select id="websiteType" name="website_type">
+
+                                <option value="">
+                                    Choose a website type
+                                </option>
+
+                                <option value="Business Website">
+                                    Business Website
+                                </option>
+
+                                <option value="Portfolio Website">
+                                    Portfolio Website
+                                </option>
+
+                                <option value="Landing Page">
+                                    Landing Page
+                                </option>
+
+                                <option value="Restaurant Website">
+                                    Restaurant Website
+                                </option>
+
+                                <option value="Personal Brand Website">
+                                    Personal Brand Website
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pageCount">
+                                Approx. Number of Pages
+                            </label>
+
+                            <input type="number" id="pageCount" name="page_count" min="1" placeholder="e.g. 5">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MAIN GOAL -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Main Goal
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_goal" value="Generate Leads">
+                                <span>Get Leads</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_goal" value="Showcase Work">
+                                <span>Showcase</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_goal" value="Sell Products or Services">
+                                <span>Sell</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_goal" value="Provide Information">
+                                <span>Inform</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STYLE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Preferred Style
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_style" value="Bold">
+                                <span>Bold</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_style" value="Clean">
+                                <span>Clean</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_style" value="Premium">
+                                <span>Premium</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_style" value="Minimal">
+                                <span>Minimal</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FEATURES -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Features You May Need
+                        </label>
+
+                        <div class="choice-grid choice-grid-three">
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_features" value="Contact Form">
+                                <span>Contact Form</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_features" value="Gallery">
+                                <span>Gallery</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_features" value="WhatsApp Button">
+                                <span>WhatsApp</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_features" value="Booking or Reservation">
+                                <span>Booking</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_features" value="Menu or Services Section">
+                                <span>Menu / Services</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_features" value="Other">
+                                <span>Other</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTENT STATUS -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Is Your Website Content Ready?
+                        </label>
+
+                        <div class="choice-grid choice-grid-three">
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_content_status" value="Ready">
+                                <span>Ready</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_content_status" value="Partly Ready">
+                                <span>Partly Ready</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="website_content_status" value="Not Ready">
+                                <span>Not Ready</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MATERIALS -->
+
+                    <div class="form-group">
+
+                        <label>
+                            What Do You Already Have?
+                        </label>
+
+                        <div class="choice-grid choice-grid-three">
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_materials" value="Logo">
+                                <span>Logo</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_materials" value="Brand Colors">
+                                <span>Brand Colors</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="checkbox" name="website_materials" value="Images or Content">
+                                <span>Images / Content</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DOMAIN + HOSTING -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Domain & Hosting
+                        </label>
+
+                        <div class="choice-grid choice-grid-three">
+
+                            <label class="choice-card">
+                                <input type="radio" name="domain_hosting" value="Already Have Both">
+                                <span>Have Both</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="domain_hosting" value="Have One">
+                                <span>Have One</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="domain_hosting" value="Need Help">
+                                <span>Need Help</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group">
+
+                        <label for="websiteNotes">
+                            Website-Specific Notes
+
+                            <span class="optional">
+                                OPTIONAL
+                            </span>
+                        </label>
+
+                        <textarea id="websiteNotes" name="website_notes" rows="3"
+                            placeholder="Tell us about the pages you need, websites you like, special features or anything else..."></textarea>
+
+                    </div>
+
+                </div>
+
+                <!-- DEADLINE -->
+
+                <!-- DEADLINE -->
 
                 <div class="form-group">
 
@@ -502,6 +2089,8 @@
                 </div>
 
 
+                <!-- PROJECT DETAILS -->
+
                 <div class="form-group full-width">
 
                     <label for="projectDetails">
@@ -509,15 +2098,25 @@
                     </label>
 
                     <textarea id="projectDetails" name="project_details" rows="6"
-                        placeholder="Tell us what you need, your preferred style and any important details..."
+                        placeholder="Tell us what you need, your preferred style, references and any important details..."
                         required></textarea>
 
                 </div>
 
 
-                <button type="submit" class="submit-order" id="submitOrder">
-                    SEND PROJECT REQUEST ↗
-                </button>
+                <!-- SUBMIT -->
+
+                <div class="form-submit-row">
+
+                    <button type="submit" class="submit-order" id="submitOrder">
+                        SEND PROJECT REQUEST ↗
+                    </button>
+
+                    <p class="form-note">
+                        No commitment. We review the request first.
+                    </p>
+
+                </div>
 
 
                 <p class="form-status" id="formStatus" aria-live="polite"></p>
@@ -525,8 +2124,11 @@
             </form>
 
         </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <!-- FOOTER -->
 
     <footer class="footer">
@@ -535,7 +2137,9 @@
 
             <div class="footer-heading">
 
-                <p>HAVE A PROJECT IN MIND?</p>
+                <p>
+                    HAVE A PROJECT IN MIND?
+                </p>
 
                 <h2>
                     LET'S MAKE<br>
@@ -551,21 +2155,83 @@
 
             <div class="footer-navigation">
 
-                <div>
-                    <p class="footer-label">NAVIGATION</p>
+                <!-- NAVIGATION -->
 
-                    <a href="#">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#work">Our Work</a>
-                    <a href="#about">About</a>
+                <div>
+
+                    <p class="footer-label">
+                        NAVIGATION
+                    </p>
+
+                    <a href="#top">
+                        Home
+                    </a>
+
+                    <a href="#services">
+                        Services
+                    </a>
+
+                    <a href="#work">
+                        Our Work
+                    </a>
+
+                    <a href="#process">
+                        Process
+                    </a>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#faq">
+                        FAQ
+                    </a>
+
                 </div>
 
-                <div>
-                    <p class="footer-label">STUDIO</p>
 
-                    <span>Thunder Creative Studio</span>
-                    <span>Cairo, Egypt</span>
-                    <span>Graphic Design & Web Development</span>
+                <!-- STUDIO -->
+
+                <div class="studio-info">
+
+                    <p class="footer-label">
+                        STUDIO
+                    </p>
+
+                    <span>
+                        Thunder Creative Studio
+                    </span>
+
+                    <span>
+                        Cairo, Egypt
+                    </span>
+
+                    <span>
+                        Graphic · Presentation · Web
+                    </span>
+
+
+                    <div class="footer-socials">
+
+                        <a href="mailto:thunderx.5342@gmail.com" aria-label="Email Thunder Creative Studio"
+                            title="Email">
+                            <i class="bx bx-envelope"></i>
+                        </a>
+
+
+                        <a href="https://www.instagram.com/thunderr5342/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram" title="Instagram">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+
+
+                        <a href="https://www.tiktok.com/@thunder.creative" target="_blank" rel="noopener noreferrer"
+                            aria-label="TikTok" title="TikTok">
+                            <i class="bx bxl-tiktok"></i>
+                        </a>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -577,7 +2243,7 @@
                     © 2026 Thunder Creative Studio
                 </span>
 
-                <a href="#">
+                <a href="#top">
                     BACK TO TOP ↑
                 </a>
 
@@ -586,8 +2252,24 @@
         </div>
 
     </footer>
+    <!-- PORTFOLIO LIGHTBOX -->
 
-    <script src="script.js?v=5"></script>
+    <div class="portfolio-lightbox" id="portfolioLightbox" aria-hidden="true">
+
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">
+            ×
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="">
+
+            <p id="lightboxCaption"></p>
+
+        </div>
+
+    </div>
+    <script src="script.js?v=6"></script>
 
 </body>
 
