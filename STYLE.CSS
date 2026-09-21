@@ -2993,3 +2993,180 @@ body.lightbox-open {
     }
 
 }
+
+/* =========================
+   FORCE THUNDER DARK THEME
+========================= */
+
+html {
+    color-scheme: dark;
+    background: #171815;
+}
+
+body,
+body.dark {
+    background: #171815;
+}
+
+body {
+    color: #f7f7f2;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+/* =========================
+   LANGUAGE SWITCHER
+========================= */
+
+.language-toggle {
+    width: 46px;
+    min-height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+
+    background: transparent;
+    color: var(--black);
+
+    border: 1px solid var(--line);
+
+    cursor: pointer;
+
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.language-toggle:hover {
+    background: var(--green);
+    color: #111;
+    border-color: var(--green);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   ARABIC / RTL
+========================= */
+
+html[dir="rtl"] body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] .section-number,
+html[dir="rtl"] .service-label,
+html[dir="rtl"] .about-number,
+html[dir="rtl"] .order-number,
+html[dir="rtl"] .work-header>p,
+html[dir="rtl"] .websites-header>p,
+html[dir="rtl"] .presentation-header>p,
+html[dir="rtl"] .nav-links a,
+html[dir="rtl"] .order-button,
+html[dir="rtl"] .language-toggle,
+html[dir="rtl"] .footer-label {
+    letter-spacing: 0 !important;
+}
+
+html[dir="rtl"] .hero h1 {
+    line-height: 1.02;
+}
+
+html[dir="rtl"] .section-header h2,
+html[dir="rtl"] .work-header h2,
+html[dir="rtl"] .websites-header h2,
+html[dir="rtl"] .presentation-header h2,
+html[dir="rtl"] .about-content h2,
+html[dir="rtl"] .faq-intro h2,
+html[dir="rtl"] .order-intro h2,
+html[dir="rtl"] .process-heading h2,
+html[dir="rtl"] .footer-heading h2 {
+    line-height: 1.08;
+}
+
+html[dir="rtl"] .green-dot {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+html[dir="rtl"] .service-content li::before {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+html[dir="rtl"] .process-step::before {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .process-step:hover {
+    padding-left: 12px;
+    padding-right: 28px;
+}
+
+html[dir="rtl"] .design-item figcaption small {
+    text-align: right;
+}
+
+html[dir="rtl"] .browser-bar {
+    direction: ltr;
+}
+
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="tel"] {
+    direction: ltr;
+    text-align: left;
+}
+
+html[dir="rtl"] .nav-links a::after {
+    transform-origin: right;
+}
+
+html[dir="rtl"] .footer-socials {
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 720px) {
+
+    .language-toggle {
+        width: 40px;
+        min-height: 38px;
+        padding: 0;
+
+        flex-shrink: 0;
+    }
+
+    html[dir="rtl"] .process-step:hover {
+        padding-left: 8px;
+        padding-right: 22px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .language-toggle {
+        width: 36px;
+        min-height: 36px;
+
+        font-size: 9px;
+    }
+
+}
